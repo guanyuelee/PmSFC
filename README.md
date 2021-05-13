@@ -1,2 +1,11 @@
 # PmSFC
-A subspace-based high-fidelity GAN inversion model. 
+Implementation for paper *High Fidelity GAN Inversion via Prior Multi-Subspace Feature Composition*, accepted in Association for Advancements of Artificial Intelligence (AAAI) 2021. 
+
+## Description
+
+## Environment
+
+## Run the code
+
+
+
