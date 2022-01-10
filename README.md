@@ -80,7 +80,7 @@ You should get similar results like this:
     display: inline-block;
     color: black;
     padding: 2px;">
-    Subspace visualization. 
+    Subspace visualization by switching the subspace features. 
     </div>
 </center>
 
