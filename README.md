@@ -44,13 +44,17 @@ conda env create -f conda_env.yaml
 ## Run the code
 Take CelebaHQ as example, you can find useful subspaces by running the command. 
 ```
-CUDA_VISIBLE_DEVICES=0 python discover_subspace.py \
---outputs=./TRAIN --inversion_type=PGGAN-Layerwise \ 
+python discover_subspace.py \
+--outputs=./TRAIN --inversion_type=PGGAN-Layerwise \
 --gan_model=pggan_celebahq --layer=3 --iterations=200 \
 --optimization=Adam --lr=0.0001 --report_image=5 \
 --report_model=5 --batch_size=4 --exp_id=SelfExpress \
 --init_type=Zeros --beta=1 --cluster_numbers=6 --alpha=0.2 \
 --subspace_dimension=6 --sparse_type=L1 --power=2.0
 ``` 
+
+```
+python discover_subspace.py --outputs=./TRAIN --inversion_type=PGGAN-Layerwise --gan_model=pggan_celebahq --layer=3 --iterations=20000 --optimization=Adam --lr=0.0001 --report_image=5 --report_model=5 --batch_size=4 --exp_id=SelfExpress --beta0=1 --beta1=1 --n_subs=6 --alpha=0.2 --d_subs=6 --sparse_type=L1 --power=2.0
+```
 
 
